@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y \
     autoconf automake build-essential curl git libsnappy-dev libtool pkg-config
 
-RUN git clone https://github.com/openvenues/libpostal -b $COMMIT
+RUN git clone https://github.com/user94857/libpostal
 
 COPY ./*.sh /libpostal/
 
