@@ -2,6 +2,6 @@
 ./bootstrap.sh
 mkdir -p /opt/libpostal_data
 ./configure --datadir=/opt/libpostal_data
-make
-make install
-ldconfig
+sudo make -j4
+sudo make install
+sudo ldconfig
